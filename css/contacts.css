@@ -1,0 +1,56 @@
+.contacts {
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-style: normal;
+    display: block;
+}
+
+.contacts__item {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+
+    background-repeat: no-repeat;  
+    background-size: 32px 35px;
+    background-position: center left;
+    margin: 0;
+    
+    padding-left: 70px;
+}
+
+.contacts__item_icon-location {
+    background-image: url("../assets/img/location.svg");
+    width: 300px;
+    margin-bottom: 38px;
+}
+
+.contacts__item_icon-phone {
+    background-image: url("../assets/img/phone.svg");
+    margin-bottom: 11px;
+    
+}
+
+.contacts__item_icon-envelope {
+    background-image: url("../assets/img/envelope.svg");
+}
+
+.social__list {
+    margin: 0;
+    padding-left: 0;
+}
+
+.social__link {
+    font-size: 0;
+    display: inline-block;
+    margin-right: 27px;
+}
+
+.social__link:last-child {
+    margin: 0;
+}
+
+.social__item {
+    display: block;
+}

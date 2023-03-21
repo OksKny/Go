@@ -1,0 +1,88 @@
+
+.about__block {
+    display: flow-root;
+    
+}
+
+.about__block::before {
+    content: "";
+    background-image: url("../assets/img/about_us.jpg");
+    width: 596px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 80px;
+}
+
+.about__subblock {
+    float: right;
+    max-width: 500px;
+    margin: 0 0 59px;
+}
+
+.about__text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 28px;
+}
+
+.about__text:last-child {
+    margin-bottom: 0;
+}
+
+.quote {
+    margin: 0;
+    padding-left: 30px;
+    position: relative;
+    max-width: 500px;
+    float: right;
+}
+
+.quote__item {
+    font-size: 44px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    line-height: 50px;
+    
+}
+
+.quote__item:before {
+    content: "“";
+    font-size: 44px;
+    font-weight: 900;
+    color: #6C0287;
+    position: absolute;
+    top: -12px;
+    left: 0;
+}
+
+.quote__item:after {
+    content: " ”"; 
+    font-size: 44px;
+    font-weight: 900;
+    color: #6C0287;   
+}
+
+.quote__figure {
+    margin: 0 25px 0 0;
+    float: right;
+}
+
+.quote__img {
+    object-fit: cover;
+    background-repeat: no-repeat ;
+    object-position: 50% 30%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.quote__author {
+    max-width: 255px;
+    float: right;
+    font-size: 20px;
+    line-height: 28px;
+}

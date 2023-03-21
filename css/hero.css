@@ -1,0 +1,31 @@
+.hero__container {
+    min-height: 823px;
+    position: relative;
+}
+
+.hero__container::after {
+    content: "";
+    background-image: url("../assets/img/vr__glasses.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 675px;   
+    height: 762px;
+    position: absolute;
+    bottom: 0; 
+    right: 30px;
+    
+}
+
+.hero__title {
+    font-size: 150px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 100%;
+    letter-spacing: -15px;
+}
+
+.hero__subtitle {
+    font-size: 28px;
+    margin: 0;
+    padding-left: 110px; 
+}
