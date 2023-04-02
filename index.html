@@ -14,15 +14,69 @@
 </head>
 
 <body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+    <div class="header__logo">
+      <img src="assets/img/logo.svg" alt="">
+    </div>
+    <nav class="header__nav">
+      <a class="header__link" href="#halls">Залы</a>
+      <a class="header__link" href="#we">О нас</a>
+      <a class="header__link" href="#booking">Бронь</a>
+      <a class="header__link" href="#reviews">Отзывы</a>
+      <a class="header__link" href="#contacts">Контакты</a>
+    </nav>
+    <button class="header__button">Заказать звонок</button>
+  </div>
+</div>
+</header>
+
 
 <main>
 <section class="section hero">
   <div class="container hero__container">
       <h1 class="hero__title">GAME OVER</h1>
       <p class="hero__subtitle">Новый формат игр и отдыха</p>
-    
+   <div class="hero__text_block">
+    <div class="hero__text_subblock hero__text_element_num">
+      <p class="hero__text">Тематических зала</p>
+    </div>
+    <div class="hero__text_subblock hero__text_element_word">
+      <p class="hero__text">Новейшая аппаратура</p>
+    </div> 
   </div>
+  <button class="hero__button">Забронировать</button>
+  <button class="hero__button_arrow"></button>
+</div>   
   </section>
+
+  <section class="section entertain">
+    <div class="container">
+      <h2 class="title">У нас есть все для классного отдыха с друзьями!</h2>
+      <ul class="entertain__list">
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_vr">VR очки</p> 
+        </li>
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_audio">Аудио-система 5.1
+            с отличным звуком</p>
+        </li>
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_karaoke">Караоке (4 микрофона)</p>
+        </li>
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_games">Настольные игры</p>
+        </li>
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_movie">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+        </li>
+        <li class="entertain__item">
+          <p class="entertain__link entertain__link_type_plаystаtiоn">РlаyStаtiоn 5</p>
+        </li>
+      </ul>
+    </div>    
+  </section> 
 
 <section class="section halls" id="halls">
   <div class="container">
@@ -46,79 +100,89 @@
 
 <section class="section booking" id="booking">
   <div class="container">
-    <h2 class="title">Забронировать</h2>
-    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <h2 class="title">Забронировать зал просто</h2>
+    <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
     
       <fieldset class="booking-halls">
         <legend class="booking-halls__title">Выбери зал</legend>
-        <input class="booking-halls__input" type="radio" name="halls" value="80's vibes" id="vibes">
+        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="80's vibes" id="vibes">
         <label class="booking-halls__lable" for="vibes">80's vibes</label>
 
-        <input class="booking-halls__input" type="radio" name="halls" value="Star wars" id="wars">
+        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Star wars" id="wars">
         <label class="booking-halls__lable" for="wars">Star wars</label>
 
-        <input class="booking-halls__input" type="radio" name="halls" value="Wild west" id="west">
+        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Wild west" id="west">
         <label class="booking-halls__lable" for="west">Wild west</label>
 
-        <input class="booking-halls__input" type="radio" name="halls" value="Neon style" id="style">
+        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Neon style" id="style">
         <label class="booking-halls__lable" for="style">Neon style</label>
       </fieldset>
       
-      <fieldset class="booking-kit">
-        <legend class="booking-kit__title">Собери набор развлечений</legend>
+      <fieldset class="booking-halls">
+        <legend class="booking-halls__title">Собери набор развлечений</legend>
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-kit__title">Приставка:</legend>
+        <legend class="booking-halls__title">Приставка:</legend>
+        <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="radio" name="console" value="PlayStation" id="ps">
           <label class="booking-kit__lable" for="ps">PlayStation</label>
-    
+        </div>
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="radio" name="console" value="Sega Mega Drive" id="sega">
           <label class="booking-kit__lable" for="sega">Sega Mega Drive</label>
-    
+        </div>
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="radio" name="console" value="X-box One S" id="box">
           <label class="booking-kit__lable" for="box">X-box One S</label>
-    
+        </div>
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="radio" name="console" value="Dendy" id="dendy">
           <label class="booking-kit__lable" for="dendy">Dendy</label>
+        </div>
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-kit__title">Настольные игры:</legend>
+        <legend class="booking-halls__title">Настольные игры</legend>
+        <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="game" value="Jenga" id="jenga">
           <label class="booking-kit__lable" for="jenga">Jenga</label>
-    
+        </div>
+        <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="game" value="Monopoly" id="mono">
           <label class="booking-kit__lable" for="mono">Monopoly</label>
-    
+        </div>
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="game" value="Манчкин" id="munch">
           <label class="booking-kit__lable" for="munch">Манчкин</label>
-    
+        </div>
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="game" value="Alias" id="alias">
           <label class="booking-kit__lable" for="alias">Alias</label>
+        </div>
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-kit__title">Дополнительно:</legend>
+        <legend class="booking-halls__title">Дополнительно</legend>
+        <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="more" value="Караоке" id="karaoke">
           <label class="booking-kit__lable" for="karaoke">Караоке</label>
+        </div>
     
+          <div class="booking-kit__subblock_input">
           <input class="booking-kit__input" type="checkbox" name="more" value="VR" id="vr">
           <label class="booking-kit__lable" for="vr">VR</label>
+        </div>
       </fieldset>
       </fieldset>
 
       <fieldset class="booking-coords">
-        <legend class="booking-coords__title">Выбери дату и время</legend>
-        <div class="booking-coords__block">
+        <legend class="booking-halls__title">Выбери дату и время</legend>
+        <div class="booking-coords__block booking-coords__block_date">
           <div class="booking-coords__subblock">
-            <label class="booking-coords__lable" for="date">Дата</label>
-            <input class="booking-coords__input" type="date" name="date" id="date" required>
-
-            <label class="booking-coords__lable" for="time">Время</label>
-            <input class="booking-coords__input" type="time" name="time" id="time" required>
+            <input class="booking-coords__input_date" type="date" name="date" id="date" required>
+            <input class="booking-coords__input_date" type="time" name="time" id="time" required>
           </div>
-            <label class="booking-coords__lable" for="number_of_people">Количество людей</label>
-              <input class="booking-coords__input" list="people" id="number_of_people" name="number_of_people" />
-            <div class="booking-coords__subblock">
+              <input class="booking-coords__input_people" list="people" id="number_of_people" name="number_of_people">
+            <div class="booking-coords__subblock_people">
               <datalist class="booking-coords__datalist" id="people">
                 <option value="1"></option>
                 <option value="2"></option>
@@ -143,12 +207,12 @@
           
           <label class="booking-coords__lable" for="email">E-mail</label>
           <input class="booking-coords__input" type="email" name="email" id="email" required>
+          
         </div>
       </fieldset>
-    
-      <button class="booking__button" type="submit">Забронировать</button>
       
   </form>
+  <button class="booking__button" type="submit">Забронировать</button>
 </div>
 </section>
   
@@ -223,9 +287,11 @@
 </main>
 
 
-<footer class="section contacts social" id="contacts">
+<footer class="section contacts social " id="contacts">
   <div class="container">
     <h2 class="title">Контакты</h2>
+      <div class="contacts-social__block">
+        <div class="contacts-social__subblock">
     <address class="contacts"> 
       <p class="contacts__item contacts__item_icon-location">г.Москва, ул.Аквамарина, 16</p>
       <a class="contacts__item contacts__item_icon-phone" href="tel:89509302893">8(950)930-28-93</a>
@@ -248,6 +314,13 @@
       </li>
     </ul>
   </nav>
+</div>
+      <img src="assets/img/map.jpg" alt="">
+    </div>
+    <div class="copyright">
+        <p class="copyright__text">© Game Over, 2022</p>
+        <p class="copyright__text">Design by Anastasia Ilina ilina9825@gmail.com</p>
+   </div>
 </div>
 </footer>
 

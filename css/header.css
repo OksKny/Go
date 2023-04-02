@@ -1,0 +1,37 @@
+.header {
+    padding: 30px 0 58px;
+    
+    
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__link {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-right: 40px;
+}
+
+.header__link:last-child {
+    padding-right: 0;
+}
+
+
+.header__button {
+    border: 3px solid #CD06FF;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 12px 32px 13px;
+}

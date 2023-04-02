@@ -1,0 +1,141 @@
+.booking {
+    background-color: #440F51;
+    padding: 80px 0;
+}
+
+.booking__form {
+    position: relative;
+}
+
+.booking-halls {
+    border: none;
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+    
+.booking-halls__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking-halls__lable {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 55px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.booking-kit__subblock {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+}
+
+.booking-kit__subblock_input {
+    position: relative;
+    padding: 0 0 0 35px;
+    margin-bottom: 14px;
+}
+
+.booking-kit__input{
+    display: block;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    margin-right: 12px;
+}
+
+.booking-kit__lable{
+    display: block;
+    padding: 3px 0;
+}
+
+.booking-coords {
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-coords__lable {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.booking-coords__block {
+    margin-right: 50px;
+}
+
+.booking-coords__block:last-child {
+    margin-right: 0;
+}
+
+.booking-coords__block_date {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking-coords__subblock {
+    margin-bottom: 33px;
+}
+
+
+.booking-coords__input_date {
+    width: 134px;
+    padding: 12px;
+    margin-right: 27px;
+}
+
+.booking-coords__input_date:last-child {
+    margin-right: 0;
+}
+
+.booking-coords__input {
+    display: block;
+    outline: 0;
+    padding: 13px;
+    margin-bottom: 12px;
+    width: 300px;
+}
+
+.booking-coords__input:last-child {
+    margin-bottom: 40px;
+}
+
+.booking-coords__input_people {
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.booking__button {
+    display: block;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px; 
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 22px; 
+    color: #6C0287; 
+    text-transform: uppercase;
+    margin: 0 90px 0 auto;
+}

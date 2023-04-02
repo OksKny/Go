@@ -1,5 +1,15 @@
+footer {
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.contacts-social__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+
 .contacts {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     text-decoration: none;
     font-style: normal;
     display: block;
@@ -53,4 +63,17 @@
 
 .social__item {
     display: block;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__text {
+    display: block;
+    max-width: 157px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: end;
 }

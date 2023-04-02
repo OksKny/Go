@@ -1,8 +1,14 @@
+@import "header.css";
 @import "style.css";
 @import "normalize.css";
 @import "hero.css";
+@import "entertain.css";
 @import "halls.css";
 @import "about-us.css";
 @import "faq.css";
 @import "contacts.css";
 @import "reviews.css";
+@import "booking.css";
+
+
+
