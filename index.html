@@ -15,65 +15,60 @@
 
 <body>
 <header class="header">
-  <div class="container">
-    <div class="header__inner">
-    <div class="header__logo">
-      <img src="assets/img/logo.svg" alt="">
-    </div>
+  <div class="container header__container">
+    <img src="assets/img/logo.svg" alt="">
     <nav class="header__nav">
-      <a class="header__link" href="#halls">Залы</a>
-      <a class="header__link" href="#we">О нас</a>
-      <a class="header__link" href="#booking">Бронь</a>
-      <a class="header__link" href="#reviews">Отзывы</a>
-      <a class="header__link" href="#contacts">Контакты</a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#halls">Залы</a>
+        </li>
+        <li>
+          <a class="header__link" href="#we">О нас</a>
+        </li>
+        <li>
+          <a class="header__link" href="#booking">Бронь</a>
+        </li>
+        <li>
+          <a class="header__link" href="#reviews">Отзывы</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
     </nav>
-    <button class="header__button">Заказать звонок</button>
+    <a class="header__button" href="#">Заказать звонок</a>
   </div>
-</div>
 </header>
 
 
 <main>
-<section class="section hero">
-  <div class="container hero__container">
+  <section class="section hero">
+    <div class="container hero__container">
       <h1 class="hero__title">GAME OVER</h1>
       <p class="hero__subtitle">Новый формат игр и отдыха</p>
-   <div class="hero__text_block">
-    <div class="hero__text_subblock hero__text_element_num">
-      <p class="hero__text">Тематических зала</p>
-    </div>
-    <div class="hero__text_subblock hero__text_element_word">
-      <p class="hero__text">Новейшая аппаратура</p>
-    </div> 
-  </div>
-  <button class="hero__button">Забронировать</button>
-  <button class="hero__button_arrow"></button>
-</div>   
+      <div class="hero__text_block">
+        <div class="hero__text_subblock hero__text_element_num">
+          <p class="hero__text">Тематических зала</p>
+        </div>
+        <div class="hero__text_subblock hero__text_element_word">
+          <p class="hero__text">Новейшая аппаратура</p>
+        </div> 
+      </div>
+      <a class="hero__button" href="#booking">Забронировать</a>
+      <a class="hero__button_arrow" href="#entertain"><img src="assets/img/down1.svg" alt="Кнопка вниз"></a>
+    </div>   
   </section>
 
-  <section class="section entertain">
+  <section class="section entertain" id="entertain">
     <div class="container">
       <h2 class="title">У нас есть все для классного отдыха с друзьями!</h2>
       <ul class="entertain__list">
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_vr">VR очки</p> 
-        </li>
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_audio">Аудио-система 5.1
-            с отличным звуком</p>
-        </li>
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_karaoke">Караоке (4 микрофона)</p>
-        </li>
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_games">Настольные игры</p>
-        </li>
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_movie">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
-        </li>
-        <li class="entertain__item">
-          <p class="entertain__link entertain__link_type_plаystаtiоn">РlаyStаtiоn 5</p>
-        </li>
+        <li class="entertain__item entertain__item_type_vr">VR очки</li>
+        <li class="entertain__item entertain__item_type_audio">Аудио-система 5.1 с отличным звуком</li>
+        <li class="entertain__item entertain__item_type_karaoke">Караоке (4 микрофона)</li>
+        <li class="entertain__item entertain__item_type_games"> Настольные игры</li>
+        <li class="entertain__item entertain__item_type_movie">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</li>
+        <li class="entertain__item entertain__item_type_plаystаtiоn">РlаyStаtiоn 5</li>
       </ul>
     </div>    
   </section> 
@@ -118,71 +113,66 @@
         <label class="booking-halls__lable" for="style">Neon style</label>
       </fieldset>
       
-      <fieldset class="booking-halls">
+      <fieldset class="booking-halls booking-kit">
         <legend class="booking-halls__title">Собери набор развлечений</legend>
       <fieldset class="booking-kit__subblock">
         <legend class="booking-halls__title">Приставка:</legend>
-        <div class="booking-kit__subblock_input">
+          <label class="booking-kit__lable" for="ps">PlayStation
           <input class="booking-kit__input" type="radio" name="console" value="PlayStation" id="ps">
-          <label class="booking-kit__lable" for="ps">PlayStation</label>
-        </div>
-          <div class="booking-kit__subblock_input">
+          </label>
+       
+          <label class="booking-kit__lable" for="sega">Sega Mega Drive
           <input class="booking-kit__input" type="radio" name="console" value="Sega Mega Drive" id="sega">
-          <label class="booking-kit__lable" for="sega">Sega Mega Drive</label>
-        </div>
-          <div class="booking-kit__subblock_input">
+          </label>
+        
+          <label class="booking-kit__lable" for="box">X-box One S
           <input class="booking-kit__input" type="radio" name="console" value="X-box One S" id="box">
-          <label class="booking-kit__lable" for="box">X-box One S</label>
-        </div>
-          <div class="booking-kit__subblock_input">
+          </label>
+        
+          <label class="booking-kit__lable" for="dendy">Dendy
           <input class="booking-kit__input" type="radio" name="console" value="Dendy" id="dendy">
-          <label class="booking-kit__lable" for="dendy">Dendy</label>
-        </div>
+          </label>
+        
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
         <legend class="booking-halls__title">Настольные игры</legend>
-        <div class="booking-kit__subblock_input">
+          <label class="booking-kit__lable" for="jenga">Jenga
           <input class="booking-kit__input" type="checkbox" name="game" value="Jenga" id="jenga">
-          <label class="booking-kit__lable" for="jenga">Jenga</label>
-        </div>
-        <div class="booking-kit__subblock_input">
+          </label>
+          <label class="booking-kit__lable" for="mono">Monopoly
           <input class="booking-kit__input" type="checkbox" name="game" value="Monopoly" id="mono">
-          <label class="booking-kit__lable" for="mono">Monopoly</label>
-        </div>
-          <div class="booking-kit__subblock_input">
+          </label>
+          <label class="booking-kit__lable" for="munch">Манчкин
           <input class="booking-kit__input" type="checkbox" name="game" value="Манчкин" id="munch">
-          <label class="booking-kit__lable" for="munch">Манчкин</label>
-        </div>
-          <div class="booking-kit__subblock_input">
+          </label>
+          <label class="booking-kit__lable" for="alias">Alias
           <input class="booking-kit__input" type="checkbox" name="game" value="Alias" id="alias">
-          <label class="booking-kit__lable" for="alias">Alias</label>
-        </div>
+          </label>
+        
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
         <legend class="booking-halls__title">Дополнительно</legend>
-        <div class="booking-kit__subblock_input">
+          <label class="booking-kit__lable" for="karaoke">Караоке
           <input class="booking-kit__input" type="checkbox" name="more" value="Караоке" id="karaoke">
-          <label class="booking-kit__lable" for="karaoke">Караоке</label>
-        </div>
-    
-          <div class="booking-kit__subblock_input">
+          </label>
+          <label class="booking-kit__lable" for="vr">VR
           <input class="booking-kit__input" type="checkbox" name="more" value="VR" id="vr">
-          <label class="booking-kit__lable" for="vr">VR</label>
-        </div>
+          </label>
+        
       </fieldset>
       </fieldset>
 
-      <fieldset class="booking-coords">
+      <fieldset class="booking-halls booking-coords">
         <legend class="booking-halls__title">Выбери дату и время</legend>
-        <div class="booking-coords__block booking-coords__block_date">
+        <div class="booking-coords__block booking-coords__block-date">
           <div class="booking-coords__subblock">
-            <input class="booking-coords__input_date" type="date" name="date" id="date" required>
-            <input class="booking-coords__input_date" type="time" name="time" id="time" required>
+            <input class="booking-coords__input-date" type="date" name="date" id="date" required>
+            <input class="booking-coords__input-date" type="time" name="time" id="time" required>
           </div>
-              <input class="booking-coords__input_people" list="people" id="number_of_people" name="number_of_people">
-            <div class="booking-coords__subblock_people">
+              <input class="booking-coords__input-people" list="people" id="number_of_people" name="number_of_people">
+            <div class="booking-coords__subblock-people">
               <datalist class="booking-coords__datalist" id="people">
                 <option value="1"></option>
                 <option value="2"></option>

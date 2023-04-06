@@ -3,16 +3,17 @@
     padding: 80px 0;
 }
 
-.booking__form {
-    position: relative;
-}
-
 .booking-halls {
     border: none;
     margin-bottom: 68px;
     display: flex;
     justify-content: space-around;
     padding: 0;
+}
+
+.booking-halls:last-child {
+    margin-bottom: 0;
+    justify-content: center;
 }
     
 .booking-halls__title {
@@ -32,21 +33,16 @@
     height: 55px;
     border-radius: 8px;
     padding: 10px 15px;
-    text-align: center;
+    text-align: center;   
 }
 
 .booking-kit__subblock {
     border: none;
-    display: flex;
-    flex-direction: column;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     
-}
-
-.booking-kit__subblock_input {
-    position: relative;
-    padding: 0 0 0 35px;
-    margin-bottom: 14px;
 }
 
 .booking-kit__input{
@@ -54,23 +50,21 @@
     width: 25px;
     height: 25px;
     color: #FFFFFF;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
     margin-right: 12px;
+    cursor: pointer;
+    
 }
 
-.booking-kit__lable{
-    display: block;
-    padding: 3px 0;
-}
-
-.booking-coords {
-    border: 0;
-    padding: 0;
+.booking-kit__lable {
     display: flex;
-    justify-content: center;
+    align-items : center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.booking-kit__lable:last-child{
+    margin-bottom: 0;
 }
 
 .booking-coords__lable {
@@ -88,7 +82,7 @@
     margin-right: 0;
 }
 
-.booking-coords__block_date {
+.booking-coords__block-date {
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -100,20 +94,20 @@
 }
 
 
-.booking-coords__input_date {
+.booking-coords__input-date {
     width: 134px;
-    padding: 12px;
+    padding: 15px;
     margin-right: 27px;
 }
 
-.booking-coords__input_date:last-child {
+.booking-coords__input-date:last-child {
     margin-right: 0;
 }
 
 .booking-coords__input {
     display: block;
     outline: 0;
-    padding: 13px;
+    padding: 15px;
     margin-bottom: 12px;
     width: 300px;
 }
@@ -122,8 +116,8 @@
     margin-bottom: 40px;
 }
 
-.booking-coords__input_people {
-    padding: 13px;
+.booking-coords__input-people {
+    padding: 15px;
     margin-bottom: 20px;
 }
 

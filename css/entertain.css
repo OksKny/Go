@@ -1,15 +1,10 @@
 .entertain__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between
+    gap: 40px 20px;
 }
 
 .entertain__item {
-    display: block;
-}
-
-.entertain__link {
     font-size: 20px;
     font-weight: 700;
     width: 380px;
@@ -18,33 +13,28 @@
     background-position: center;
     background-size: cover;
     padding: 166px 40px 0px 40px;
-    
-
 }
 
-.entertain__link_type_vr {
+.entertain__item_type_vr {
     background-image: url("../assets/img/entertain/vr.jpg");
-    margin-bottom: 40px;
 }
 
-.entertain__link_type_audio {
+.entertain__item_type_audio {
     background-image: url("../assets/img/entertain/audio.jpg"); 
-    margin-bottom: 40px;
 }
 
-.entertain__link_type_karaoke {
+.entertain__item_type_karaoke {
     background-image: url("../assets/img/entertain/karaoke.jpg");
-    margin-bottom: 40px;
 }
 
-.entertain__link_type_games {
+.entertain__item_type_games {
     background-image: url("../assets/img/entertain/game.jpg");
 }
 
-.entertain__link_type_movie {
+.entertain__item_type_movie {
     background-image: url("../assets/img/entertain/netflix.jpg");
 }
 
-.entertain__link_type_plаystаtiоn {
+.entertain__item_type_plаystаtiоn {
     background-image: url("../assets/img/entertain/sony.jpg");
 }
