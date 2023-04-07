@@ -61,8 +61,18 @@ footer {
     margin: 0;
 }
 
-.social__item {
-    display: block;
+.social__item:hover {
+    color: #EADEED;
+}
+
+.social__item:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+    
+}
+
+.social__item:active {
+    color: #CD06FF;
 }
 
 .copyright {

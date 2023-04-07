@@ -80,12 +80,42 @@
     box-shadow: 0 0 10px #6C0287;
 }
 
+.hero__button:hover {
+    background-color: #840AA3;
+}
+
+.hero__button:focus {
+    background-color:  #840AA3;
+}
+
+.hero__button:active {
+    background-color: #640AA3;
+}
+
+
 .hero__button_arrow {
     position: absolute;
     bottom: 10%;
     right: 50%;
     z-index: 2;
     transform: translateX(50%);
+}
+
+.hero__button_arrow:hover {
+    background-image: url("../assets/img/down_hover.svg");
+    background-repeat: no-repeat;
+}
+
+.hero__button_arrow:focus {
+    outline: none;
+    border: 1px solid #CD06FF;
+}
+
+.hero__button_arrow:active {
+    background-image: url("../assets/img/down_active.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
 }
 
 

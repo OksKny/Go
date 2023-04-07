@@ -43,10 +43,22 @@
     margin: 0;
 }
 
+.questions__item:nth-child(odd):hover:after {
+    background-image: url("../assets/img/open_purple_hover.svg");    
+}
 
+.questions__item:nth-child(odd):active:after {
+    background-image: url("../assets/img/close_purple_active.svg");
+    
+}
 
+.questions__item:nth-child(even):hover:after {
+    background-image: url("../assets/img/open_white_hover.svg");
+}
 
-
+.questions__item:nth-child(even):active:after {
+    background-image: url("../assets/img/open_white_active.svg");
+}
 
 
 

@@ -36,6 +36,20 @@
     text-align: center;   
 }
 
+.booking-halls__lable:hover {
+    background-color: #EADEED;
+    border: 3px solid #640AA3;
+}
+
+.booking-halls__lable:focus {
+    border: 3px solid #640AA3;
+}
+
+.booking-halls__lable:active {
+    background-color: #6C0287;
+    border: 3px solid #FFFFFF;
+}
+
 .booking-kit__subblock {
     border: none;
     padding: 0;
@@ -52,7 +66,10 @@
     color: #FFFFFF;
     margin-right: 12px;
     cursor: pointer;
-    
+}
+
+.booking-kit__input:focus {
+    outline: 1px solid #CD06FF;
 }
 
 .booking-kit__lable {
@@ -100,6 +117,10 @@
     margin-right: 27px;
 }
 
+.booking-coords__input-date:focus {
+    outline: 2px solid #CD06FF;;
+}
+
 .booking-coords__input-date:last-child {
     margin-right: 0;
 }
@@ -121,6 +142,14 @@
     margin-bottom: 20px;
 }
 
+.booking-coords__input-people:focus {
+    outline:  2px solid #CD06FF;
+}
+
+.booking-coords__input:focus {
+    border: 2px solid #CD06FF;
+}
+
 .booking__button {
     display: block;
     background: #FFFFFF;
@@ -132,4 +161,18 @@
     color: #6C0287; 
     text-transform: uppercase;
     margin: 0 90px 0 auto;
+}
+
+.booking__button:hover {
+    background-color: #EADEED;
+    border: 3px solid #6C0287;
+}
+
+.booking__button:focus {
+    background-color: #FFFFFF;
+    border: 3px solid #6C0287;
+}
+
+.booking__button:active {
+    background-color: #EADEED;
 }
