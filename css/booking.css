@@ -5,7 +5,7 @@
 
 .booking-halls {
     border: none;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
     padding: 0;
@@ -15,7 +15,7 @@
     margin-bottom: 0;
     justify-content: center;
 }
-    
+
 .booking-halls__title {
     font-weight: 700;
     font-size: 24px;
@@ -32,7 +32,7 @@
     width: 250px;
     height: 55px;
     border-radius: 8px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-align: center;   
 }
 
@@ -50,17 +50,35 @@
     border: 3px solid #FFFFFF;
 }
 
+.booking-halls__input {
+    display: none;
+}
+
+.booking-halls__input:checked + .booking-halls__lable {
+    background-color: #6C0287;
+    border: 3px solid #FFFFFF;
+}
+
+
 .booking-kit__subblock {
+    display: flex;
     border: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    
+    align-items: flex-start;
+}
+
+.booking-kit {
+    margin-bottom: 67px;
+}
+
+.booking-kit__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
 }
 
 .booking-kit__input{
-    display: block;
     width: 25px;
     height: 25px;
     color: #FFFFFF;
@@ -73,11 +91,10 @@
 }
 
 .booking-kit__lable {
+    font-size: 22px;
     display: flex;
-    align-items : center;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     margin-bottom: 20px;
+    flex-direction: row-reverse;
 }
 
 .booking-kit__lable:last-child{
@@ -155,7 +172,7 @@
     background: #FFFFFF;
     border: none;
     border-radius: 10px; 
-    padding: 15px 50px;
+    padding: 12px 47px;
     font-weight: 700;
     font-size: 22px; 
     color: #6C0287; 
@@ -165,14 +182,15 @@
 
 .booking__button:hover {
     background-color: #EADEED;
-    border: 3px solid #6C0287;
+    outline: 3px solid #6C0287;
 }
 
 .booking__button:focus {
     background-color: #FFFFFF;
-    border: 3px solid #6C0287;
+    outline: 3px solid #6C0287;
 }
 
 .booking__button:active {
     background-color: #EADEED;
+    outline: none;
 }

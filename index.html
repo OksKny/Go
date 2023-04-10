@@ -16,7 +16,7 @@
 <body>
 <header class="header">
   <div class="container header__container">
-    <img src="assets/img/logo.svg" alt="">
+    <img class="header__logo"  src="assets/img/logo.svg" alt="">
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
@@ -34,9 +34,13 @@
         <li>
           <a class="header__link" href="#contacts">Контакты</a>
         </li>
+        
       </ul>
+      
     </nav>
+    
     <a class="header__button" href="#">Заказать звонок</a>
+  
   </div>
 </header>
 
@@ -100,43 +104,36 @@
     
       <fieldset class="booking-halls">
         <legend class="booking-halls__title">Выбери зал</legend>
-        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="80's vibes" id="vibes">
+        <input class="booking-halls__input" type="radio" name="halls" value="80's vibes" id="vibes">
         <label class="booking-halls__lable" for="vibes">80's vibes</label>
-
-        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Star wars" id="wars">
-        <label class="booking-halls__lable" for="wars">Star wars</label>
-
-        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Wild west" id="west">
+        <input class="booking-halls__input" type="radio" name="halls" value="Star wars" id="wars">
+        <label class="booking-halls__lable" for="wars">Star wars </label>
+        <input class="booking-halls__input" type="radio" name="halls" value="Wild west" id="west">
         <label class="booking-halls__lable" for="west">Wild west</label>
-
-        <input class="booking-halls__input visually-hidden" type="radio" name="halls" value="Neon style" id="style">
+        <input class="booking-halls__input" type="radio" name="halls" value="Neon style" id="style">
         <label class="booking-halls__lable" for="style">Neon style</label>
       </fieldset>
       
       <fieldset class="booking-halls booking-kit">
         <legend class="booking-halls__title">Собери набор развлечений</legend>
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-halls__title">Приставка:</legend>
-          <label class="booking-kit__lable" for="ps">PlayStation
-          <input class="booking-kit__input" type="radio" name="console" value="PlayStation" id="ps">
+        <legend class="booking-kit__subtitle">Приставка:</legend>
+          <label class="booking-kit__lable" for="ps">PlayStation 5
+            <input class="booking-kit__input" type="radio" name="console" value="PlayStation" id="ps">
           </label>
-       
           <label class="booking-kit__lable" for="sega">Sega Mega Drive
-          <input class="booking-kit__input" type="radio" name="console" value="Sega Mega Drive" id="sega">
+            <input class="booking-kit__input" type="radio" name="console" value="Sega Mega Drive" id="sega">
           </label>
-        
           <label class="booking-kit__lable" for="box">X-box One S
-          <input class="booking-kit__input" type="radio" name="console" value="X-box One S" id="box">
+            <input class="booking-kit__input" type="radio" name="console" value="X-box One S" id="box">
           </label>
-        
           <label class="booking-kit__lable" for="dendy">Dendy
-          <input class="booking-kit__input" type="radio" name="console" value="Dendy" id="dendy">
+            <input class="booking-kit__input" type="radio" name="console" value="Dendy" id="dendy">
           </label>
-        
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-halls__title">Настольные игры</legend>
+        <legend class="booking-kit__subtitle">Настольные игры</legend>
           <label class="booking-kit__lable" for="jenga">Jenga
           <input class="booking-kit__input" type="checkbox" name="game" value="Jenga" id="jenga">
           </label>
@@ -153,7 +150,7 @@
       </fieldset>
 
       <fieldset class="booking-kit__subblock">
-        <legend class="booking-halls__title">Дополнительно</legend>
+        <legend class="booking-kit__subtitle">Дополнительно</legend>
           <label class="booking-kit__lable" for="karaoke">Караоке
           <input class="booking-kit__input" type="checkbox" name="more" value="Караоке" id="karaoke">
           </label>
@@ -186,23 +183,20 @@
         <div class="booking-coords__block">
           <label class="booking-coords__lable" for="name">Имя</label>
           <input class="booking-coords__input" type="text" name="name" id="name" required>
-          
           <label class="booking-coords__lable" for="surname">Фамилия</label>
           <input class="booking-coords__input" type="text" name="surname" id="surname" required>
         </div> 
-
         <div class="booking-coords__block">
           <label class="booking-coords__lable" for="phone">Номер телефона</label>
           <input class="booking-coords__input" type="tel" name="phone" id="phone" required>
-          
           <label class="booking-coords__lable" for="email">E-mail</label>
           <input class="booking-coords__input" type="email" name="email" id="email" required>
-          
         </div>
       </fieldset>
-      
   </form>
+  <div>
   <button class="booking__button" type="submit">Забронировать</button>
+</div>
 </div>
 </section>
   
@@ -328,7 +322,10 @@
     </div>
     <div class="copyright">
         <p class="copyright__text">© Game Over, 2022</p>
-        <p class="copyright__text">Design by Anastasia Ilina ilina9825@gmail.com</p>
+        <div class="copyright__block">
+        <p class="copyright__text">Design by Anastasia Ilina</p>
+        <a class="copyright__mail copyright__text" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
+      </div>
    </div>
 </div>
 </footer>

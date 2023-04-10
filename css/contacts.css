@@ -21,13 +21,15 @@ footer {
     color: #FFFFFF;
     text-decoration: none;
     display: block;
-
     background-repeat: no-repeat;  
     background-size: 32px 35px;
     background-position: center left;
     margin: 0;
-    
     padding-left: 70px;
+}
+
+.contacts__item:hover {
+    color:  #EADEED;;
 }
 
 .contacts__item_icon-location {
@@ -86,4 +88,9 @@ footer {
     font-size: 14px;
     font-weight: 400;
     text-align: end;
+    margin-bottom: 6px;
+}
+
+.copyright__mail:hover {
+    color: #EADEED;;
 }
