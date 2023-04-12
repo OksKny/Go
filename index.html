@@ -34,13 +34,9 @@
         <li>
           <a class="header__link" href="#contacts">Контакты</a>
         </li>
-        
       </ul>
-      
     </nav>
-    
-    <a class="header__button" href="#">Заказать звонок</a>
-  
+    <button class="header__button" type="button" href="#">Заказать звонок</button>
   </div>
 </header>
 
@@ -50,16 +46,18 @@
     <div class="container hero__container">
       <h1 class="hero__title">GAME OVER</h1>
       <p class="hero__subtitle">Новый формат игр и отдыха</p>
-      <div class="hero__text_block">
-        <div class="hero__text_subblock hero__text_element_num">
+      <div class="hero__block">
+        <div class="hero__subblock">
+          <p class="hero__element-num">4</p>
           <p class="hero__text">Тематических зала</p>
         </div>
-        <div class="hero__text_subblock hero__text_element_word">
+        <div class="hero__subblock">
+          <p class="hero__element-word">new</p>
           <p class="hero__text">Новейшая аппаратура</p>
         </div> 
       </div>
       <a class="hero__button" href="#booking">Забронировать</a>
-      <a class="hero__button_arrow" href="#entertain"><img src="assets/img/down1.svg" alt="Кнопка вниз"></a>
+      <a class="hero__button-arrow" href="#entertain"><img src="assets/img/down1.svg" alt="Кнопка вниз"></a>
     </div>   
   </section>
 
@@ -105,13 +103,13 @@
       <fieldset class="booking-halls">
         <legend class="booking-halls__title">Выбери зал</legend>
         <input class="booking-halls__input" type="radio" name="halls" value="80's vibes" id="vibes">
-        <label class="booking-halls__lable" for="vibes">80's vibes</label>
+        <label class="booking-halls__lable" for="vibes" tabindex="0">80's vibes</label>
         <input class="booking-halls__input" type="radio" name="halls" value="Star wars" id="wars">
-        <label class="booking-halls__lable" for="wars">Star wars </label>
+        <label class="booking-halls__lable" for="wars" tabindex="0">Star wars </label>
         <input class="booking-halls__input" type="radio" name="halls" value="Wild west" id="west">
-        <label class="booking-halls__lable" for="west">Wild west</label>
+        <label class="booking-halls__lable" for="west" tabindex="0">Wild west</label>
         <input class="booking-halls__input" type="radio" name="halls" value="Neon style" id="style">
-        <label class="booking-halls__lable" for="style">Neon style</label>
+        <label class="booking-halls__lable" for="style" tabindex="0">Neon style</label>
       </fieldset>
       
       <fieldset class="booking-halls booking-kit">
@@ -259,22 +257,22 @@
   <div class="container">
   <h2 class="title">Частые вопросы</h2>
   <ul class="questions__list">
-    <li class="questions__item">Можно ли забронировать комнату онлайн?</li>
-    <li class="questions__item">Могут ли мне вернуть деньги за бронь?</li>
-    <li class="questions__item">Какая игра самая популярная?</li>
-    <li class="questions__item">Как получить VIP карту?</li>
-    <li class="questions__item">Какая комната самая популярная?</li>
+    <li class="questions__item" tabindex="0">Можно ли забронировать комнату онлайн?</li>
+    <li class="questions__item" tabindex="0">Могут ли мне вернуть деньги за бронь?</li>
+    <li class="questions__item" tabindex="0">Какая игра самая популярная?</li>
+    <li class="questions__item" tabindex="0">Как получить VIP карту?</li>
+    <li class="questions__item" tabindex="0">Какая комната самая популярная?</li>
   </ul>
 </div>
 </section>
 </main>
 
 
-<footer class="section contacts social " id="contacts">
+<footer class="footer" id="contacts">
   <div class="container">
     <h2 class="title">Контакты</h2>
-      <div class="contacts-social__block">
-        <div class="contacts-social__subblock">
+      <div class="footer__block">
+        <div class="footer__subblock">
     <address class="contacts"> 
       <p class="contacts__item contacts__item_icon-location">г.Москва, ул.Аквамарина, 16</p>
       <a class="contacts__item contacts__item_icon-phone" href="tel:89509302893">8(950)930-28-93</a>
@@ -324,9 +322,9 @@
         <p class="copyright__text">© Game Over, 2022</p>
         <div class="copyright__block">
         <p class="copyright__text">Design by Anastasia Ilina</p>
-        <a class="copyright__mail copyright__text" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
+        <a class="copyright__text" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
       </div>
-   </div>
+    </div>
 </div>
 </footer>
 

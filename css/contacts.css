@@ -1,8 +1,9 @@
 footer {
     background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+    padding: 50px 0 10px;
 }
 
-.contacts-social__block {
+.footer__block {
     display: flex;
     justify-content: space-between;
     margin-bottom: 156px;
@@ -88,9 +89,17 @@ footer {
     font-size: 14px;
     font-weight: 400;
     text-align: end;
-    margin-bottom: 6px;
+    
 }
 
-.copyright__mail:hover {
+.copyright__text:hover {
     color: #EADEED;;
+}
+
+.copyright__text:focus {
+    color: #CD06FF;
+}
+
+.copyright__text:active {
+    color: #CD06FF;
 }

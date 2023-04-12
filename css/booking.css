@@ -42,7 +42,7 @@
 }
 
 .booking-halls__lable:focus {
-    border: 3px solid #640AA3;
+    outline: 3px solid #640AA3;
 }
 
 .booking-halls__lable:active {

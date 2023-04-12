@@ -31,6 +31,15 @@
     text-align: center;
 }
 
+.halls__link:hover,
+.halls__link:focus {
+    color: #EADEED;
+}
+
+.halls__link:active {
+    color: #CD06FF;
+}
+
 .halls__link_type_vibes {
     background-image: url("../assets/img/halls/80_vibes.jpg");
 }
