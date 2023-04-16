@@ -24,18 +24,19 @@
 .header__link:hover {
     color: #6C0287;
     border: #6C0287;
+    transition-duration: 0.5s;
 }
 
 
 .header__link:focus {
     color: #6C0287;
     outline: #6C0287;
-    
+    transition-duration: 0.5s; 
 }
 
 .header__link:active {
     color: #640AA3;
-    
+    transition-duration: 0.5s;
 }
 
 .header__button {
@@ -48,6 +49,7 @@
     text-transform: uppercase;
     border-radius: 10px;
     padding: 12px 32px 13px;
+    
 }
 
 
@@ -55,6 +57,8 @@
     background-color: #6C0287;
     outline: none;
     border: 3px solid #6C0287;
+    transition-duration: 0.5s;
+    transition-property: background-color, border;
 }
 
 
@@ -62,6 +66,8 @@
     background-color: #6C0287;
     outline: none;
     border: 3px solid #6C0287;
+    transition-duration: 0.5s;
+    transition-property: background-color, border;
     
 }
 
@@ -69,5 +75,7 @@
     background-color: #640AA3;
     outline: none;
     border: 3px solid #000000;
+    transition-duration: 0.5s;
+    transition-property: background-color, border;
     
 }

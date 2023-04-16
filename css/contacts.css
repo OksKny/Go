@@ -31,6 +31,7 @@ footer {
 
 .contacts__item:hover {
     color:  #EADEED;;
+    transition-duration: 0.5s;
 }
 
 .contacts__item_icon-location {
@@ -66,16 +67,19 @@ footer {
 
 .social__item:hover {
     color: #EADEED;
+    transition-duration: 0.5s;
 }
 
 .social__item:focus {
     color: #EADEED;
     outline: 1px solid #CD06FF;
+    transition-duration: 0.8s;
     
 }
 
 .social__item:active {
     color: #CD06FF;
+    transition-duration: 0.5s;
 }
 
 .copyright {
@@ -93,13 +97,16 @@ footer {
 }
 
 .copyright__text:hover {
-    color: #EADEED;;
+    color: #EADEED;
+    transition-duration: 0.5s;
 }
 
 .copyright__text:focus {
     color: #CD06FF;
+    transition-duration: 0.5s;
 }
 
 .copyright__text:active {
     color: #CD06FF;
+    transition-duration: 0.5s;
 }

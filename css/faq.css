@@ -44,28 +44,34 @@
 }
 
 .questions__item:nth-child(odd):hover:after {
-    background-image: url("../assets/img/open_purple_hover.svg");    
+    background-image: url("../assets/img/open_purple_hover.svg"); 
+    transition-duration: 0.5s;   
 }
 
 .questions__item:nth-child(odd):focus:after {
-    background-image: url("../assets/img/open_purple_hover.svg");    
+    background-image: url("../assets/img/open_purple_hover.svg");  
+    transition-duration: 0.5s;   
 }
 
 .questions__item:nth-child(odd):active:after {
     background-image: url("../assets/img/close_purple_active.svg");
+    transition-duration: 0.5s; 
     
 }
 
 .questions__item:nth-child(even):hover:after {
     background-image: url("../assets/img/open_white_hover.svg");
+    transition-duration: 0.5s; 
 }
 
 .questions__item:nth-child(even):focus:after {
     background-image: url("../assets/img/open_white_hover.svg");
+    transition-duration: 0.5s; 
 }
 
 .questions__item:nth-child(even):active:after {
     background-image: url("../assets/img/open_white_active.svg");
+    transition-duration: 0.5s; 
 }
 
 

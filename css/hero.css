@@ -79,40 +79,53 @@
 
 .hero__button:hover {
     background-color: #840AA3;
+    transition-duration: 0.5s;
+    transition-property: background-color;
 }
 
 .hero__button:focus {
     background-color:  #840AA3;
+    transition-duration: 0.5s;
+    transition-property: background-color;
 }
 
 .hero__button:active {
     background-color: #640AA3;
+    transition-duration: 0.5s;
+    transition-property: background-color;
 }
 
 
 .hero__button-arrow {
+    width: 97px;
+    height: 97px;
     position: absolute;
     bottom: 10%;
     right: 50%;
     z-index: 2;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
     transform: translateX(50%);
 }
 
 .hero__button-arrow:hover {
-    background-image: url("../assets/img/down_hover.svg");
-    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    color: #640AA3;
+    border: none;
+    transition-duration: 0.5s;
 }
 
 .hero__button-arrow:focus {
-    outline: none;
-    border: 1px solid #CD06FF;
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+    transition-duration: 0.5s;
 }
 
 .hero__button-arrow:active {
-    background-image: url("../assets/img/down_active.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #CD06FF;
+    color: #FFFFFF;
     border: none;
+    transition-duration: 0.5s;
 }
 
 

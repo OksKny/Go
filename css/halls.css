@@ -34,10 +34,14 @@
 .halls__link:hover,
 .halls__link:focus {
     color: #EADEED;
+    transition-duration: 0.5s;
+    transition-property: color;
 }
 
 .halls__link:active {
     color: #CD06FF;
+    transition-duration: 0.5s;
+    transition-property: color;
 }
 
 .halls__link_type_vibes {
