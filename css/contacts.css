@@ -19,7 +19,7 @@ footer {
 .contacts__item {
     font-size: 24px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--main-wite-color);
     text-decoration: none;
     display: block;
     background-repeat: no-repeat;  
@@ -72,13 +72,13 @@ footer {
 
 .social__item:focus {
     color: #EADEED;
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--main-bright-lilac-color);
     transition-duration: 0.8s;
     
 }
 
 .social__item:active {
-    color: #CD06FF;
+    color: var(--main-bright-lilac-color);
     transition-duration: 0.5s;
 }
 
@@ -102,11 +102,11 @@ footer {
 }
 
 .copyright__text:focus {
-    color: #CD06FF;
+    color: var(--main-bright-lilac-color);
     transition-duration: 0.5s;
 }
 
 .copyright__text:active {
-    color: #CD06FF;
+    color: var(--main-bright-lilac-color);
     transition-duration: 0.5s;
 }

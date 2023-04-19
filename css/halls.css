@@ -29,19 +29,20 @@
     text-transform: uppercase;
     float: right;
     text-align: center;
+    transition-duration: 0.8s;
+    transition-property: color;
 }
 
-.halls__link:hover,
+.halls__link:hover {
+    color: #EADEED;
+} 
+
 .halls__link:focus {
     color: #EADEED;
-    transition-duration: 0.5s;
-    transition-property: color;
 }
 
 .halls__link:active {
-    color: #CD06FF;
-    transition-duration: 0.5s;
-    transition-property: color;
+    color: var(--main-bright-lilac-color);
 }
 
 .halls__link_type_vibes {

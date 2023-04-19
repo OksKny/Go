@@ -1,5 +1,5 @@
 .booking {
-    background-color: #440F51;
+    background-color: var(--main-bg-color);
     padding: 80px 0;
 }
 
@@ -28,7 +28,7 @@
     font-size: 30px;
     color: #000000;
     text-transform: uppercase;
-    background-color: #FFFFFF;
+    background-color: var(--main-wite-color);
     width: 250px;
     height: 55px;
     border-radius: 8px;
@@ -38,21 +38,21 @@
 
 .booking-halls__lable:hover {
     background-color: #EADEED;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--main-violet-color);
     transition-duration: 0.1s;
     transition-property: background-color, border;
 }
 
 .booking-halls__lable:focus {
-    outline: 3px solid #640AA3;
+    outline: 3px solid var(--main-violet-color);
     transition-duration: 0.3s;
     transition-property: outline;
 }
 
 .booking-halls__lable:active {
-    background-color: #6C0287;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
+    background-color: var( --main-dark-lilac-color);
+    border: 3px solid var(--main-wite-color);
+    color: var(--main-wite-color);
     transition-duration: 0.3s;
     transition-property: background-color, border;
 }
@@ -62,9 +62,9 @@
 }
 
 .booking-halls__input:checked + .booking-halls__lable {
-    background-color: #6C0287;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
+    background-color: var( --main-dark-lilac-color);
+    border: 3px solid var(--main-wite-color);
+    color: var(--main-wite-color);
 }
 
 
@@ -89,13 +89,13 @@
 .booking-kit__input{
     width: 25px;
     height: 25px;
-    color: #FFFFFF;
+    color: var(--main-wite-color);
     margin-right: 12px;
     cursor: pointer;
 }
 
 .booking-kit__input:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--main-bright-lilac-color);
 }
 
 .booking-kit__lable {
@@ -143,7 +143,7 @@
 }
 
 .booking-coords__input-date:focus {
-    outline: 2px solid #CD06FF;
+    outline: 2px solid var(--main-bright-lilac-color);
     transition-duration: 0.8s;
 }
 
@@ -169,18 +169,18 @@
 }
 
 .booking-coords__input-people:focus {
-    outline:  2px solid #CD06FF;
+    outline:  2px solid var(--main-bright-lilac-color);
     transition-duration: 0.8s;
 }
 
 .booking-coords__input:focus {
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--main-bright-lilac-color);
     transition-duration: 0.8s;
 }
 
 .booking__button {
     display: block;
-    background: #FFFFFF;
+    background: var(--main-wite-color);
     border: none;
     border-radius: 10px; 
     padding: 12px 47px;
@@ -193,13 +193,13 @@
 
 .booking__button:hover {
     background-color: #EADEED;
-    outline: 3px solid #6C0287;
+    outline: 3px solid var( --main-dark-lilac-color);
     transition-duration: 0.5s;
 }
 
 .booking__button:focus {
-    background-color: #FFFFFF;
-    outline: 3px solid #6C0287;
+    background-color: var(--main-wite-color);
+    outline: 3px solid var( --main-dark-lilac-color);
     transition-duration: 0.5s;
 }
 

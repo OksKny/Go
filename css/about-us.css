@@ -52,7 +52,7 @@
     content: "“";
     font-size: 44px;
     font-weight: 900;
-    color: #6C0287;
+    color: var( --main-dark-lilac-color);
     position: absolute;
     top: -12px;
     left: 0;
@@ -62,7 +62,7 @@
     content: " ”"; 
     font-size: 44px;
     font-weight: 900;
-    color: #6C0287;   
+    color: var( --main-dark-lilac-color);  
 }
 
 .quote__figure {

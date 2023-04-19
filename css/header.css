@@ -19,30 +19,31 @@
 .header__link {
     font-size: 22px;
     text-transform: uppercase;
+    transition-duration: 0.5s; 
+    transition-property: color, border;
 }
 
 .header__link:hover {
-    color: #6C0287;
-    border: #6C0287;
-    transition-duration: 0.5s;
+    color: var(--main-violet-color);
+    border: var(--main-violet-color);
+    
 }
 
-
 .header__link:focus {
-    color: #6C0287;
-    outline: #6C0287;
-    transition-duration: 0.5s; 
+    color: var(--main-violet-color);
+    outline: var(--main-violet-color);
+    
 }
 
 .header__link:active {
-    color: #640AA3;
-    transition-duration: 0.5s;
+    color: var(--main-violet-color);
+    
 }
 
 .header__button {
     display: block;
-    border: 3px solid #CD06FF;
-    color: #FFFFFF;
+    border: 3px solid var(--main-bright-lilac-color);
+    color: var(--main-wite-color);
     background-color: transparent;
     font-size: 22px;
     font-weight: 700;
@@ -54,25 +55,25 @@
 
 
 .header__button:hover {
-    background-color: #6C0287;
+    background-color: var(--main-violet-color);
     outline: none;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--main-violet-color);
     transition-duration: 0.5s;
     transition-property: background-color, border;
 }
 
 
 .header__button:focus {
-    background-color: #6C0287;
+    background-color: var(--main-violet-color);
     outline: none;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--main-violet-color);
     transition-duration: 0.5s;
     transition-property: background-color, border;
     
 }
 
 .header__button:active {
-    background-color: #640AA3;
+    background-color: var(--main-violet-color);
     outline: none;
     border: 3px solid #000000;
     transition-duration: 0.5s;

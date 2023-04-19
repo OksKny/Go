@@ -1,7 +1,11 @@
+.entertain {
+ min-height: 790px;
+}
 .entertain__list {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 20px;
+    
 }
 
 .entertain__item {
@@ -13,7 +17,19 @@
     background-position: center;
     background-size: cover;
     padding: 166px 40px 0px 40px;
+    transition-duration: 0.5s;
+    transition-property: transform, box-shadow;
+    
 }
+
+.entertain__item:nth-child(2) {
+    transform: translate(0, 60px);
+}
+
+.entertain__item:nth-child(5) {
+    transform: translate(0, 60px);
+}
+
 
 .entertain__item_type_vr {
     background-image: url("../assets/img/entertain/vr.jpg");
@@ -42,5 +58,4 @@
 .entertain__item:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px #808080;
-    transition-duration: 0.5s;
 }
