@@ -1,0 +1,268 @@
+.header-room {
+    padding: 30px 0 60px;
+}
+
+.back {
+    padding-bottom:  20px;
+}
+
+.description {
+    padding-bottom: 0;
+}
+
+.description__bg {
+    background-image: url("../assets/img/halls/80_vibes_page.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 750px;
+    max-width: 100%;
+    margin: 0 0 100px 0;
+
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 80px;
+    text-align: center;
+    padding:  331px 360px;
+    text-transform: uppercase;
+}
+
+.description__bg_room_wild-west {
+    background-image: url("../assets/img/halls/wild_west_page.jpg");
+}
+
+.description__bg_room_star-wars {
+    background-image: url("../assets/img/halls/star_wars_page.jpg");
+}
+
+.description__bg_room_neon-style {
+    background-image: url("../assets/img/halls/neon_style_page.jpg");
+}
+
+.description__back {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.description__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.about__block-room {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img-room {
+    max-width:600px;
+    min-height: 424px;
+}
+
+
+.halls__list-room {
+    display: flex;
+    gap: 20px;
+}
+
+
+.halls__link-room {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 73px 145px;
+}
+
+@media (max-width: 1250px) {
+    .description__bg {
+        min-height: 534px;
+        margin: 0 0 70px 0;
+        padding: 227px 152px;
+    }
+
+    .description__text {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 130px;
+    }
+
+    .halls__link-room {
+        padding: 75px 103px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header-room {
+        padding: 30px 0 52px;
+    }
+
+    .description__bg {
+        padding: 221px 269px;
+    }
+
+    .description__text {
+        padding: 0 55px;
+    }
+
+    .about__block-room {
+        gap: 30px;
+    }
+    
+    .about__img-room {
+        max-width: 461px;
+        min-height: 332px;
+    }
+    
+    .halls__link-room {
+        padding: 50px 73px;
+    }
+
+    .footer-room {
+        padding: 43px 0 19px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-room {
+        padding: 37px 0 39px;
+    }
+
+    .description__back {
+        font-size: 16px;
+        line-height: 28px;
+        
+    }
+
+    .description__bg {
+        min-height: 402px;
+        margin: 0 0 57px 0;
+        font-size: 60px;
+        line-height: 72px;
+        padding:  165px 125px;
+    }
+
+    .description__text {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 10px;
+    }
+
+    .about__block-room {
+        gap: 46px;
+    }
+
+    .about__img-room {
+        max-width: 329px;
+        min-height: 326px;
+    }
+
+    .halls__list-room {
+        gap: 8px;
+    }
+
+    .halls__link-room {
+        padding: 46px 66px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer-room {
+        padding: 10px 0 19px;
+    }
+    
+    
+}
+
+@media (max-width: 670px) {
+    .description__bg {
+        min-height: 360px;
+        padding: 155px 106px;
+    }
+
+    .halls__link-room {
+        padding: 37px 44px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__img-room {
+        max-width: 257px;
+        min-height: 225px;
+    }
+}
+
+@media (max-width: 500px) {
+    .description__bg {
+        min-height: 256px;
+        padding: 104px 78px;
+        margin: 0 0 30px 0;
+        font-size: 45px;
+        line-height: 58px;
+    }
+
+    .about__block-room {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    
+    .halls__list-room {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .halls__link-room {
+        padding: 85px 44px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .header-room {
+        padding: 19px 0 12px;
+    }
+
+    .description__back {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .description__bg {
+        min-height: 124px;
+        padding: 63px 11px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .description__arrow {
+        width: 16px;
+    }
+
+    .description__text {
+        padding: 0;
+    }
+
+    .about__img-room {
+        max-width: 275px;
+        min-height: 179px;
+    }
+
+    .halls__link-room {
+        padding: 46px 85px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer-room {
+        padding: 18px 0 16px;
+    }
+}

@@ -1,6 +1,7 @@
 html {
     position: relative;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -58,30 +59,15 @@ iframe {
     transform: scale(0);
 }
 
-
-
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 30px;
-    
-}
-
-.title {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto 40px;
-    max-width: 880px;
 }
 
 .section {
     padding: 50px 0;
-    
 }
-
-
 
 .section:last-child {
     padding-bottom: 51px;
@@ -89,6 +75,85 @@ iframe {
 
 .section:first-child {
     padding-top: 0;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 50px;
+    max-width: 880px;
+}
+
+
+@media(max-width:1240px) {
+    .container {
+        padding: 0 60px;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:1110px) {
+    .section {
+        padding: 35px 0;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 auto 26px;
+        max-width: 650px;
+    }
+}
+
+@media(max-width:950px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 auto 26px;
+        max-width: 500px;
+    }
+
+    .section:last-child {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:640px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:450px) {
+    .title {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto 15px;
+        max-width: 500px;
+    }
+
+    .section {
+        padding: 15px 0;
+    }
+
+    .section:last-child {
+        padding-bottom: 19px;
+    }
+    
+    
 }
 
 
