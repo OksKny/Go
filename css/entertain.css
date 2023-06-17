@@ -75,7 +75,7 @@
         font-size: 20px;
         line-height: 28px;
         min-height: 170px;
-        padding: 133px 56px 0px 31px;
+        padding: 95px 55px 0px 31px;
     }
     
     .entertain__item:nth-child(3n-1) {
@@ -102,6 +102,10 @@
         gap: 20px;
         
     }
+
+    .entertain__item {
+        padding: 120px 40px 0px 31px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -127,7 +131,7 @@
         font-size: 15px;
         line-height: 20px;
         min-height: 150px;
-        padding: 107px 56px 0px 31px;
+        padding: 107px 30px 0px 31px;
     }
 }
 
@@ -142,11 +146,11 @@
         font-size: 10px;
         line-height: 14px;
         min-height: 75px;
-        padding: 50px 5px 0px 63px;
+        padding: 89px 15px 0px 22px;
     }
 
     .entertain__item:nth-child(5) {
-        padding: 24px 18px 0px 29px;
+        padding: 81px 13px 0px 22px;
     }
 }
 
@@ -165,6 +169,6 @@
     }
 
     .entertain__item:nth-child(5) {
-        padding: 25px 13px 0px 10px;
+        padding: 20px 13px 0px 10px;
     }
 }

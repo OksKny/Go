@@ -96,7 +96,19 @@
 
 @media (max-width: 650px) {
     .halls__link {
-        padding: 43px 69px 36px 68px;
+        padding: 40px 70px 40px 70px;
+    }
+}
+
+@media (max-width: 580px) {
+    .halls__link {
+        padding: 40px 160px 40px 160px;
+    }
+}
+
+@media (max-width: 460px) {
+    .halls__link {
+        padding: 40px 130px 40px 130px;
     }
 }
 
@@ -118,7 +130,7 @@
     .halls__link {
         font-size: 26px;
         line-height: 34px;
-        padding: 49px 85px 22px 81px;
+        padding: 40px 110px 40px 110px;
     }
 }
 

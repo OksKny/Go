@@ -193,6 +193,7 @@
     color: #6C0287; 
     text-transform: uppercase;
     margin: 0 100px 0 auto;
+    box-shadow: 0 0 20px var(--main-wite-color);
 }
 
 .booking__button:hover {
@@ -286,7 +287,7 @@
         padding: 13px 46px;
         font-size: 18px;
         line-height: 24px;
-        margin: 0 0 0 auto;
+        margin: 0 25px 0 auto;
     }
 }
 
@@ -354,7 +355,7 @@
     }
 
     .booking-coords__subblock {
-        margin: 0 100px 0 0;
+        margin: 0 110px 0 0;
     }
 
     .booking-coords__input-date {
@@ -370,7 +371,7 @@
     }
 
     .booking-coords__input-people {
-        padding: 18px 52px;
+        padding: 18px 40px;
         margin-bottom: 0;
     }
 
@@ -390,17 +391,43 @@
     }
 }
 
+@media (max-width: 760px) {
+    .booking-coords__block-date,
+    .booking-coords__two-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .booking-coords__subblock {
+        margin: 0;
+    }
+
+    .booking-coords__block-date {
+        margin-bottom: 0;
+    }
+
+    .booking__button {
+        margin: 0 auto;
+    }
+
+}
+
 @media (max-width: 700px) {
     .booking-halls {
         flex-wrap: wrap;
-        gap: 14px 20px;
-        justify-content: center;
+        gap: 14px 5px;
     }
 
     .booking-halls__lable {
-        font-size: 15px;
-        width: 140px;
+        font-size: 13px;
+        width: 110px;
         border-radius: 5px;
+        padding: 11px 10px;
+    }
+
+    .booking-kit {
+        gap: 32px 32px;
     }
 }
 
@@ -414,6 +441,25 @@
         padding: 18px 41px;
     
 }
+}
+
+@media (max-width: 520px) {
+    .booking-kit {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .booking-halls__lable {
+        font-size: 14px;
+        width: 130px;
+        height: 30px;
+        border-radius: 4px;
+        padding: 6px 15px;
+    }
+    .booking-halls {
+    gap: 14px 52px;
+    justify-content: space-evenly;
+    }
 }
 
 @media (max-width: 420px) {
@@ -437,13 +483,7 @@
         justify-content: space-between;
     }
 
-    .booking-halls__lable {
-        font-size: 14px;
-        width: 130px;
-        height: 30px;
-        border-radius: 4px;
-        padding: 6px 20px;
-    }
+   
 
     .booking-kit__subtitle {
         font-size: 14px;

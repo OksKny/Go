@@ -175,13 +175,17 @@
 @media(max-width:1010px) {
     .about__block {
         display: grid;
-        grid-template-columns: minmax(380px, max-content) 350px;
+        grid-template-columns: minmax(300px, max-content) 275px;
         grid-auto-rows: auto;
         grid-template-areas: 
         "img text"
         "img text"
         "quote quote";
         gap: 60px 40px;
+    }
+
+    .quote__block {
+        max-width: 685px;
     }
 }
 
@@ -198,7 +202,7 @@
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        max-width: 321px;
+        max-width: 222px;
     }
 
     .about__text {
@@ -206,12 +210,9 @@
         line-height: 22px;
     }
 
-    .quote__block {
-        max-width: 684px;
-    }
 
     .quote__item {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .quote__img {
@@ -223,9 +224,19 @@
     }
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 720px) {
     .about__block {
         grid-template-columns: minmax(250px, max-content) 250px;
+    }
+
+    .quote__block {
+        max-width: 599px;
+    }
+
+    .quote__item {
+        font-size: 25px;
     }
 }
 
@@ -262,6 +273,7 @@
     }
 
     .quote__block {
+        max-width: 300px;
         padding-left: 15px;
     }
 
@@ -274,6 +286,11 @@
     .quote__item:before{
         font-size: 22px;
         top: -4px;
+    }
+
+    .quote__item::after{
+        font-size: 22px;
+        
     }
 
     .quote__author {

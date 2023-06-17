@@ -145,7 +145,7 @@
 
 @media (max-width: 400px) {
     .questions__item:nth-child(-n + 2) {
-        padding:  10px 32px 10px 11px;
+        padding:  7px 111px 7px 10px;
     }
 }
 

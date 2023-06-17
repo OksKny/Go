@@ -10,10 +10,27 @@
     padding-bottom: 0;
 }
 
+.description__arrow {
+    margin-right: 10px;
+}
+
+.description__back:hover {
+    color: var(--main-violet-color);
+    
+}
+
+.description__back:focus {
+    color: var(--main-violet-color);  
+}
+
+.description__back:active {
+    color: var(--main-violet-color);
+}
+
 .description__bg {
     background-image: url("../assets/img/halls/80_vibes_page.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    
     background-size: cover;
     position: relative;
     min-height: 750px;
@@ -45,6 +62,8 @@
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 20px;
+    transition-duration: 0.5s; 
+    transition-property: color, border;
 }
 
 .description__text {
@@ -121,7 +140,7 @@
     }
     
     .halls__link-room {
-        padding: 50px 73px;
+        padding: 65px;
     }
 
     .footer-room {
@@ -159,8 +178,8 @@
     }
 
     .about__img-room {
-        max-width: 329px;
-        min-height: 326px;
+        max-width: 378px;
+        min-height: 278px;
     }
 
     .halls__list-room {
@@ -176,8 +195,21 @@
     .footer-room {
         padding: 10px 0 19px;
     }
-    
-    
+}
+
+@media (max-width: 760px) {
+.about__block-room {
+    gap: 30px;
+    flex-direction: column;
+}
+
+.about__img-room {
+    width: 100%;
+}
+
+.about__block-text-room {
+    max-width: 550px;
+}
 }
 
 @media (max-width: 670px) {
@@ -187,14 +219,20 @@
     }
 
     .halls__link-room {
-        padding: 37px 44px;
-        font-size: 20px;
-        line-height: 24px;
+        padding: 40px 45px 40px 45px;
     }
 
-    .about__img-room {
-        max-width: 257px;
-        min-height: 225px;
+    
+}
+
+@media (max-width: 580px) {
+    .halls__link-room {
+        padding: 80px 190px 80px 190px;
+    }
+
+    .halls__list-room {
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
@@ -208,25 +246,19 @@
     }
 
     .about__block-room {
-        flex-direction: column;
+        
         gap: 15px;
     }
     
-    
-    .halls__list-room {
-        flex-direction: column;
-        gap: 5px;
-    }
-
     .halls__link-room {
-        padding: 85px 44px;
         font-size: 20px;
         line-height: 24px;
+        padding: 65px 160px 66px 160px;
     }
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .header-room {
         padding: 19px 0 12px;
     }
@@ -256,8 +288,12 @@
         min-height: 179px;
     }
 
+    .halls__list-room {
+        gap: 5px;
+    }
+
     .halls__link-room {
-        padding: 46px 85px;
+        padding: 50px 113px 50px 113px;
         font-size: 20px;
         line-height: 24px;
     }

@@ -1,13 +1,18 @@
 html {
     position: relative;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
 }
 
 body { 
