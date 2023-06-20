@@ -29,8 +29,8 @@
     width: 45px;
     height: 45px;
     position: absolute;
-    top: 12px;
-    right: 34px;
+    top: 21px;
+    right: 70px;
     background-size: contain;
 }
 
@@ -86,8 +86,8 @@
     }
 
     .questions__item:after {
-        top: 16px;
-        right: 21px;
+        top: 12px;
+        right: 20px;
     }
 
     .questions__item:last-child {
@@ -114,12 +114,19 @@
 
 @media (max-width: 850px) {
     .questions__item:after {
-        top: 8px;
+        top: 12px;
         right: 65px;
     }
 
     .questions__item {
         padding: 22px 58px;
+    }
+}
+
+@media (max-width: 700px) {
+    .questions__item:after {
+        top: 12px;
+        right: 30px;
     }
 }
 

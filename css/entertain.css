@@ -22,7 +22,11 @@
     
 }
 
-.entertain__item:nth-child(3n-1) {
+.entertain__item:nth-child(2) {
+    margin-top: 70px;
+}
+
+.entertain__item:nth-child(5) {
     margin-top: 70px;
 }
 
@@ -51,7 +55,7 @@
 }
 
 .entertain__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     box-shadow: 0 0 10px #808080;
 }
 
