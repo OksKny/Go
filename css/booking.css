@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin-bottom: 60px;
 }
 
 .booking-halls:last-child {
@@ -116,12 +117,17 @@
 .booking-coords__lable {
     display: block;
     font-size: 14px;
+    line-height: 16px;
     font-weight: 700;
     margin-bottom: 6px;
 }
 
 .booking-coords__block {
     margin-right: 40px;
+}
+
+.booking-coords__subblock {
+    margin-bottom: 36px;
 }
 
 .booking-coords__block:last-child {
@@ -132,7 +138,8 @@
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    margin-top: 23px;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
 .booking-coords__input-date {
@@ -157,7 +164,7 @@
 .booking-coords__input {
     outline: 0;
     padding: 15px 51px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .booking-coords__input:last-child {
@@ -166,7 +173,7 @@
 
 .booking-coords__input-people {
     padding: 15px;
-    margin-top: 33px;
+    
 }
 
 .booking-coords__input-people:focus {
@@ -304,7 +311,7 @@
     }
 
     .booking-halls {
-        margin-bottom: 54px;
+        margin-bottom: 50px;
     }
 
     .booking-halls__lable {
