@@ -1,11 +1,9 @@
-.entertain {
-    min-height: 810px;
-}
+
 .entertain__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    grid-auto-rows: 228px;
-    gap: 40px 20px;
+    grid-auto-rows: 48px;
+    gap: 42px 20px;
     
 }
 
@@ -22,40 +20,44 @@
     
 }
 
-.entertain__item:nth-child(2) {
-    margin-top: 70px;
-}
-
-.entertain__item:nth-child(5) {
-    margin-top: 70px;
-}
-
 .entertain__item_type_vr {
     background-image: url("../assets/img/entertain/vr.jpg");
+    grid-column: 1;
+    grid-row: 1/4;
 }
 
 .entertain__item_type_audio {
     background-image: url("../assets/img/entertain/audio.jpg"); 
+    grid-column: 2;
+    grid-row: 2/5;
 }
 
 .entertain__item_type_karaoke {
     background-image: url("../assets/img/entertain/karaoke.jpg");
+    grid-column: 3;
+    grid-row: 1/4;
 }
 
 .entertain__item_type_games {
     background-image: url("../assets/img/entertain/game.jpg");
+    grid-column: 1;
+    grid-row: 4/7;
 }
 
 .entertain__item_type_movie {
     background-image: url("../assets/img/entertain/netflix.jpg");
+    grid-column: 2;
+    grid-row: 5/8;
 }
 
 .entertain__item_type_plаystаtiоn {
     background-image: url("../assets/img/entertain/sony.jpg");
+    grid-column: 3;
+    grid-row: 4/7;
 }
 
 .entertain__item:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
     box-shadow: 0 0 10px #808080;
 }
 
@@ -70,7 +72,7 @@
     .entertain__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-        grid-auto-rows: 171px;
+        grid-auto-rows: 45px;
         gap: 30px 22px;
         
     }
@@ -79,58 +81,85 @@
         font-size: 20px;
         line-height: 28px;
         min-height: 170px;
-        padding: 95px 55px 0px 31px;
-    }
-    
-    .entertain__item:nth-child(3n-1) {
-        margin-top: 53px;
+        padding: 115px 33px 0px 19px;
     }
 
     .entertain__item:nth-child(5) {
-        padding: 81px 21px 0px 21px;
+        padding: 115px 21px 0px 21px;
     }
-    
 }
 
-@media(max-width:990px) {
-    .entertain__item:nth-child(3n-1) {
-        margin-top: 0;
+@media(max-width:1100px) {
+    .entertain__list {
+        grid-auto-rows: 38px; 
     }
 
     .entertain__item:nth-child(5) {
-        padding: 132px 18px 0px 29px;
+        padding: 85px 21px 0px 21px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .entertain__item:nth-child(5) {
+        padding: 135px 18px 0px 29px;
     }
 
     .entertain__list {
-        grid-auto-rows: 200px;
+        grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+        grid-auto-rows: 245px;
         gap: 20px;
-        
     }
 
     .entertain__item {
-        padding: 120px 40px 0px 31px;
+        padding: 136px 40px 0px 31px;
     }
+
+    .entertain__item_type_vr, 
+    .entertain__item_type_audio,
+    .entertain__item_type_karaoke,
+    .entertain__item_type_games,
+    .entertain__item_type_movie, 
+    .entertain__item_type_plаystаtiоn {
+        grid-column: auto;
+        grid-row: auto;
+    } 
 }
 
 @media (max-width: 900px) {
     .entertain__title {
         margin: 0 auto 30px;
     }
+
+    .entertain__list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 20px;
+    }
+
+    .entertain__item:nth-child(5) {
+        padding: 115px 18px 0px 29px;
+    }
+
+    
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
+    .entertain__list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-auto-rows: 170px;
+        gap: 15px;
+    }
+
     .entertain__item:nth-child(5) {
-        padding: 93px 18px 0px 29px;
+        padding: 85px 18px 0px 29px;
+    }
+
+    .entertain__item {
+        padding: 100px 40px 0px 31px;
     }
 }
 
 @media (max-width: 650px) {
-    .entertain__list {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        grid-auto-rows: 160px;
-        gap: 10px;
-    }
-
     .entertain__item {
         font-size: 15px;
         line-height: 20px;
@@ -142,7 +171,7 @@
 @media (max-width: 500px) {
     .entertain__list {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-auto-rows: 130px;
+        grid-auto-rows: 110px;
         gap: 10px;
     }
 
@@ -150,11 +179,11 @@
         font-size: 10px;
         line-height: 14px;
         min-height: 75px;
-        padding: 89px 15px 0px 22px;
+        padding: 75px 15px 0px 22px;
     }
 
     .entertain__item:nth-child(5) {
-        padding: 81px 13px 0px 22px;
+        padding: 70px 13px 0px 22px;
     }
 }
 
@@ -164,15 +193,22 @@
     }
     
     .entertain__list {
-        grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
-        grid-auto-rows: 75px;
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+        grid-auto-rows: 90px;
     }
+    
 
     .entertain__item {
         padding: 30px 13px 0px 10px;
     }
 
     .entertain__item:nth-child(5) {
-        padding: 20px 13px 0px 10px;
+        padding: 30px 13px 0px 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .entertain__list {
+        grid-auto-rows: 75px;
     }
 }
